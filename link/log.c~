@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+extern FILE *logjun;
+	
+void _StraightTaint_log(short BBID)
+{
+    fprintf(logjun, "%d\n", BBID);
+}
+
+void _StraightTaint_eval(unsigned long offset, short BBID)
+{
+}
