@@ -20,7 +20,7 @@ int main(int argc, char **argv)
         void * p2 = malloc(16);
         ssize_t rc = read(fs2, p1, 4);
         rc = read(fs1, p2, 4);
-	*((int*)p1+4)=*((int*)p1)+*((int*)p2);
+	*((int*)p1+1)=*((int*)p1)+*((int*)p2);
 //        int a=*((int*)p)+*((int*)p+1);
 //        int b=*((int*)p)**((int*)p+1);
 //        *((int*)p+2)=a;

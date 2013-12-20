@@ -64,7 +64,7 @@ entry:
   %add = add nsw i32 %14, %17
   %18 = load i8** %p1, align 8
   %19 = bitcast i8* %18 to i32*
-  %add.ptr = getelementptr inbounds i32* %19, i64 4
+  %add.ptr = getelementptr inbounds i32* %19, i64 1
   store i32 %add, i32* %add.ptr, align 4
   %20 = load i32* %fd1, align 4
   %21 = load i8** %p1, align 8

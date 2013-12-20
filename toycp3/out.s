@@ -80,7 +80,7 @@ main:                                   # @main
 	movl	(%rax), %ecx
 	movq	-72(%rbp), %rdx
 	addl	(%rdx), %ecx
-	movl	%ecx, 16(%rax)
+	movl	%ecx, 4(%rax)
 	movl	-52(%rbp), %edi
 	movq	-64(%rbp), %rsi
 	movl	$4, %edx
